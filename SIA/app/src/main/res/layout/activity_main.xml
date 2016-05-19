@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gurmandeep.demo.demo2.MainActivity">
+
+   <TextView
+       android:id="@+id/textview_1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/header"
+       android:background="@color/colorAccent"
+       android:textColor="@color/text_color"
+       android:textSize="@dimen/headertext_size"
+       android:padding="@dimen/header_padding"/>
+
+    <EditText
+        android:id="@+id/edittext_1"
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textmargin_top"
+        android:layout_below="@+id/textview_1"
+        android:layout_centerInParent="true"
+        android:hint="@string/username_hint"/>
+
+    <EditText
+        android:id="@+id/edittext_2"
+        android:layout_width="@dimen/edittext_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text2margin_top"
+        android:layout_below="@+id/edittext_1"
+        android:layout_centerInParent="true"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text"
+        android:textAllCaps="false"
+        android:layout_below="@+id/edittext_2"
+        android:layout_marginTop="@dimen/buttonmargin_top"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/textview_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_text"
+        android:textColor="@color/registration_color"
+        android:layout_below="@id/button_1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/registrationmargin_top"
+        />
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gurmandeep.demo.demo2.Registration">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textview_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header"
+        android:background="@color/colorAccent"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/headertext_size"
+        android:padding="@dimen/header_padding"/>
+
+    <EditText
+        android:id="@+id/edittext_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_name_hint"
+        android:layout_marginTop="@dimen/edittext_name_margintop"
+        android:layout_below="@+id/textview_1"
+
+        />
+    <EditText
+        android:id="@+id/edittext_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_contact_hint"
+        android:layout_below="@+id/edittext_1"
+        android:layout_marginTop="@dimen/edittext_name_margintop"/>
+
+    <EditText
+        android:id="@+id/edittext_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_email_id_hint"
+        android:layout_below="@id/edittext_2"
+        android:layout_marginTop="@dimen/registrationmargin_top" />
+
+    <EditText
+        android:id="@+id/edittext_4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        android:layout_below="@+id/edittext_3"
+        android:layout_marginTop="@dimen/edittext_name_margintop"/>
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/edittext_4"
+        android:layout_marginTop="@dimen/registrationmargin_top">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radiobutton_male_text"/>
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_female_text"
+            android:layout_marginLeft="@dimen/radiobutton_margin_left"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/prefrences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/gender"
+        android:layout_marginTop="@dimen/registrationmargin_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_text"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/prefrences_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_prefrence_1"/>
+
+            <CheckBox
+                android:id="@+id/prefrences_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_prefrence_2"/>
+
+            <CheckBox
+                android:id="@+id/prefrences_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_prefrence_3"/>
+
+            <CheckBox
+                android:id="@+id/prefrences_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_prefrence_4"/>
+
+            <CheckBox
+                android:id="@+id/prefrences_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_prefrence_5"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button_text"
+            android:layout_below="@id/prefrences"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</ScrollView>

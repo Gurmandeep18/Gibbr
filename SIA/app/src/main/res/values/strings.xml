@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Demo2</string>
+    <string name="header">Sia Tutorials</string>
+    <string name="button_text">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="registration_text"><u>Register here</u></string>
+    <string name="edittext_name_hint">Name</string>
+    <string name="edittext_contact_hint">Contact No.</string>
+    <string name="edittext_email_id_hint">Email Id</string>
+    <string name="radiobutton_male_text">Male</string>
+    <string name="radiobutton_female_text">Female</string>
+    <string name="checkbox_prefrence_1">Music</string>
+    <string name="checkbox_prefrence_2">Arts</string>
+    <string name="checkbox_prefrence_3">Science</string>
+    <string name="checkbox_prefrence_4">Maths</string>
+    <string name="checkbox_prefrence_5">Painting</string>
+    <string name="checkbox_text">Prefrences</string>
+    <string name="submit_button_text">Register</string>
+    <string name="text_welcome">Welcome</string>
+    <string name="prefrence_text">Your selected prefrences are as follows </string>
+    <string name="settings_text">Change Prefrences</string>
+    <string name="save_changed_settings">Save</string>
+
+
+</resources>
